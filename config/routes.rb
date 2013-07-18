@@ -2,6 +2,8 @@ Libapp::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   get "/register", to: "readers#new", as: "register"
+  
+  resources :readers
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
