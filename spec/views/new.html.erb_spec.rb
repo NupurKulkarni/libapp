@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "readers/new.html.erb" do 
 	before :each do
 		reader = mock_model("Reader").as_new_record.as_null_object
-		# reader.stub(:email).and_return("abc")
+		reader.stub(:email).and_return("abc")
 		assign(:reader,reader)
 		render
 	end
