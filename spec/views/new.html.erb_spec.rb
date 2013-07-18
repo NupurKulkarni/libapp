@@ -8,25 +8,23 @@ describe "readers/new.html.erb" do
 		render
 	end
 
-
 	it "has new_reader form" do 
 		expect(rendered).to have_selector('form#new_reader')
-		# Reader.should_receive(:find).and_return(reader)
 	end
 
 	it "has reader_email field" do 
 		expect(rendered).to have_selector('#reader_email')
 	end
 
-	it "has reader_password field"
+	it "has reader_password field" do
 		expect(rendered).to have_selector('#reader_password')
 	end
 
-	it "has reader_password_confirmation field"
+	it "has reader_password_confirmation field" do
 		expect(rendered).to have_selector('#reader_password_confirmation')
 	end
 
-	it "has register button"
+	it "has register button" do
 		expect(rendered).to have_selector('input[type="submit]')
 	end
 end

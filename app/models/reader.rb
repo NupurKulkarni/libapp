@@ -1,3 +1,5 @@
 class Reader < ActiveRecord::Base
-  # attr_accessible :title, :body
+
+
+	attr_accessible :password, :password_confirmation
 end
